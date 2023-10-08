@@ -6,7 +6,7 @@ pipeline {
         stage ("Inicial"){
             
             steps {
-                sh pwd
+                powershell 'Write-Output "Hello, World"'
             }
         }
     }
