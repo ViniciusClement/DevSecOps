@@ -7,8 +7,13 @@ pipeline {
             steps {
                 echo 'iniciando a pipeline'
             }
+        }
+    }
+
+    stages {
+        stage ("DAST"){
             steps {
-                echo 'passo 2'
+                nmap -sV localhost
             }
         }
     }
