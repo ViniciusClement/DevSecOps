@@ -3,11 +3,11 @@ pipeline {
     agent any
 
     stages {
-        stage ("Inicial"){
+        stage ("DAST"){
             
             steps {
                 powershell 'Write-Output "Hello, World"'
-                powershell '."/Program Files (x86)/Nmap/nmap.exe" -sV localhost'
+                powershell '."/Program Files (x86)/Nmap/nmap.exe" -sV localhost '
             }
         }
     }
