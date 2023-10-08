@@ -7,8 +7,7 @@ pipeline {
             
             steps {
                 powershell 'Write-Output "Hello, World"'
-                powershell './"Program Files (x86)/Nmap/nmap.exe"'
-                powershell 'dir'
+                powershell 'dir "Program Files (x86)/Nmap/"'
             }
         }
     }
