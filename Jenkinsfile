@@ -6,7 +6,7 @@ pipeline {
         stage ("Inicial"){
             
             steps {
-                bat 'echo python --version '
+                bat 'start python --version '
             }
         }
     }
