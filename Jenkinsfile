@@ -9,8 +9,7 @@ pipeline {
             }
 
             stepts {
-                python -m venv "c:/Users/Vinicius/venv"
-                "c:/Users/Vinicius/venv/Scripts/activate.exe"
+                python -m venv 
             }
         }
     }
