@@ -7,8 +7,8 @@ pipeline {
             
             steps {
                 powershell 'Write-Output "Hello, World"'
-                powershell 'nmap -sV localhost'
-                
+                powershell 'cd \Program Files (x86)\Nmap'
+                powershell 'dir'
             }
         }
     }
