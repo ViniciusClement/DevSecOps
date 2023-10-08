@@ -9,7 +9,7 @@ pipeline {
             }
 
             stepts {
-                python -m venv 
+                python3 --version 
             }
         }
     }
