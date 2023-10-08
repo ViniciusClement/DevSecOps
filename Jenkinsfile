@@ -6,7 +6,7 @@ pipeline {
         stage ("Inicial"){
             
             steps {
-                bat 'start zenmap'
+                bat 'python --version '
             }
         }
     }
