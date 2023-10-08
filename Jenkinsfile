@@ -3,10 +3,12 @@ pipeline {
     agent any
 
     stages {
-        stage ("Inicial"){
-            
+       stage('build') {
             steps {
-                bat "C:\Users\Vinicius\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Nmap"
+                script {
+                    def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
+                    println("disk_size = ${disk_size}")
+                }
             }
         }
     }
