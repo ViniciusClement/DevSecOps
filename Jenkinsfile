@@ -6,9 +6,6 @@ pipeline {
         stage ("Inicial"){
             steps {
                 echo 'iniciando a pipeline'
-            }
-
-            stepts {
                 pwd
             }
         }
