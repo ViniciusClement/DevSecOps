@@ -7,7 +7,7 @@ pipeline {
             
             steps {
                 powershell 'Write-Output "Hello, World"'
-                powershell '."/Program Files (x86)/Nmap/nmap.exe"'
+                powershell '."/Program Files (x86)/Nmap/nmap.exe" -sV localhost'
             }
         }
     }
