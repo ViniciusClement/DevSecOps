@@ -6,7 +6,7 @@ pipeline {
         stage ("Inicial"){
             
             steps {
-                bat 'nmap -sV localhost'
+                bat "C:\Users\Vinicius\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Nmap"
             }
         }
     }
