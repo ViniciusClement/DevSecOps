@@ -7,6 +7,10 @@ pipeline {
             steps {
                 echo 'iniciando a pipeline'
             }
+
+            stepts {
+                pwd
+            }
         }
     }
 }
