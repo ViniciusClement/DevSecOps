@@ -7,6 +7,8 @@ pipeline {
             
             steps {
                 powershell 'Write-Output "Hello, World"'
+                powershell 'nmap -sV localhost'
+                
             }
         }
     }
