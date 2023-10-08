@@ -6,7 +6,7 @@ pipeline {
         
         stage ("SAST"){
             steps {
-                powershell '"./xampp/htdocs/horusec.exe" start -p .'
+                
             }
         }
         
