@@ -7,9 +7,6 @@ pipeline {
             steps {
                 echo 'iniciando a pipeline'
             }
-            steps {
-                git-bash.exe 
-            }
         }
     }
 }
