@@ -8,7 +8,7 @@ pipeline {
                 echo 'iniciando a pipeline'
             }
             steps {
-                "C:\Program Files\Git\git-bash.exe" --cd-to-home
+                C:\Program Files\Git\git-bash.exe 
             }
         }
     }
