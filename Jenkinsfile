@@ -4,9 +4,9 @@ pipeline {
 
     stages {
         stage ("Inicial"){
-            
+
             steps {
-                bat 'echo %PATH%'
+                bat "C:/Program Files (x86)/Nmap"
             }
         }
     }
