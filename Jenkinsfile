@@ -3,12 +3,10 @@ pipeline {
     agent any
 
     stages {
-       stage('build') {
+        stage ("Inicial"){
+            
             steps {
-                script {
-                    def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
-                    println("disk_size = ${disk_size}")
-                }
+                bat 'start zenmap'
             }
         }
     }
