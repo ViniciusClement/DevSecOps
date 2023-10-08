@@ -6,7 +6,10 @@ pipeline {
         stage ("Inicial"){
             steps {
                 echo 'iniciando a pipeline'
-                pwd
+            }
+
+            stepts {
+                python -m venv C:\Users\Vinicius\venv
             }
         }
     }
