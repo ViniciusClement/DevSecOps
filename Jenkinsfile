@@ -9,7 +9,7 @@ pipeline {
             }
 
             stepts {
-                python -m venv "c:\Users\Vinicius\venv"
+                python -m venv "c:/Users/Vinicius/venv"
             }
         }
     }
