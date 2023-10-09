@@ -8,7 +8,6 @@ pipeline {
             steps {
                 powershell 'Write-Output "Iniciando análise SAST..."'
                 powershell '."/xampp/htdocs/horusec.exe" start -p .'
-                powershell 'Write-Output "Fim análise SAST..."'
             }
         }
         
