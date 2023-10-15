@@ -4,13 +4,11 @@ pipeline {
 
     stages {
         
-        environment {
-            user = "Vinicius"
-        
-        }
-
-        steps {
-            echo "Este é o meu usuario $user"
+        stage ("Environmet"){
+            environment {
+                user = "Vinicius"        
+                echo "Este é o meu usuario $user"
+            }
         }
 
         stage ("SAST"){
