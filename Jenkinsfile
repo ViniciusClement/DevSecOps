@@ -4,6 +4,15 @@ pipeline {
 
     stages {
         
+        environment {
+            user = "Vinicius"
+        
+        }
+
+        steps {
+            echo "Este é o meu usuario $user"
+        }
+
         stage ("SAST"){
             steps {
                 powershell 'Write-Output "Iniciando análise SAST..."'
