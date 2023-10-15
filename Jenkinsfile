@@ -11,7 +11,7 @@ pipeline {
             }
 
             steps {
-                echo 'Este e o meu primeiro "$user"'
+                echo "Este e o meu primeiro $user"
             }
         }
 
