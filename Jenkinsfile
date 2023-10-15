@@ -5,9 +5,13 @@ pipeline {
     stages {
         
         stage ("Environmet"){
+            
             environment {
                 user = "Vinicius"        
-                echo "Este é o meu usuario $user"
+            }
+
+            steps {
+                powershell 'Write-Output "Este e o meu primeiro $user"'
             }
         }
 
