@@ -7,11 +7,11 @@ pipeline {
         stage ("Environmet"){
             
             environment {
-                user = "Vinicius"        
+                user = 'Vinicius'        
             }
 
             steps {
-                echo "Este e o meu primeiro ${user}"
+                echo 'Este e o meu primeiro $user'
             }
         }
 
